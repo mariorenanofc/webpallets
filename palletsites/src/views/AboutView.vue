@@ -25,7 +25,7 @@
   </template>
   <script>
     export default {
-      name: 'About',
+      name: 'AboutView',
     };
   </script>
   <style lang="scss">
