@@ -1,11 +1,9 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
+
 import Home from '../views/HomeView.vue';
 import Form from '../views/FormView.vue';
-import DataView from '../views/DataView.vue';
+import Data from '../views/DataView.vue';
 import About from '../views/AboutView.vue';
-
-Vue.use(VueRouter);
 
 const routes = [
   {
@@ -21,7 +19,7 @@ const routes = [
   {
     path: '/data',
     name: 'Data',
-    component: DataView,
+    component: Data,
   },
   {
     path: '/about',
@@ -30,9 +28,8 @@ const routes = [
   },
 ];
 
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes,
 });
 

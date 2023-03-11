@@ -1,23 +1,34 @@
 <template>
-    <div class="home jumbotron text-center">
-      <h1>Bem-vindo à Pallets Inc.</h1>
-      <p class="lead">Nós fornecemos a melhor solução de paletes para o seu negócio.</p>
-      <router-link to="/form" class="btn btn-primary btn-lg">Preencha nosso formulário</router-link>
+  <div class="home jumbotron text-center">
+    <h1>Bem-vindo à Pallets Inc.</h1>
+    <p class="lead">Nós fornecemos a melhor solução de paletes para o seu negócio.</p>
+    <router-link to="/form" class="btn btn-primary btn-lg">Preencha nosso formulário</router-link>
+    <div class="mt-5">
+      <CarouselSlide />
     </div>
-  </template>
-  
-  <script>
-  export default {
-    name: 'HomesView',
-    data() {
-      return {
-        companyName: "Pallets Inc."
-      }
-    }
-  }
-  </script>
-  
+    <div class="mt-5">
+      <SobrePallets />
+    </div>
+  </div>
+</template>
 
+<script>
+import SobrePallets from '../components/SobrePallets.vue';
+import CarouselSlide from '../components/CarouselSlide.vue';
+
+export default {
+  name: 'HomesView',
+  data() {
+    return {
+      companyName: "Pallets Inc."
+    }
+  },
+  components: {
+    SobrePallets,
+    CarouselSlide
+  }
+}
+</script>
 
 <style scoped>
 .container {
@@ -46,5 +57,4 @@ img {
   max-width: 100%;
   height: auto;
 }
-
 </style>
