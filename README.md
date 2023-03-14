@@ -1,4 +1,4 @@
-# Pallets Inc
+# Pallets Inc 
 
 Esse é o repositório do projeto de desenvolvimento do frontend da página de pallets da empresa Pallets Inc.
 
