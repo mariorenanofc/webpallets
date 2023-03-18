@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5 mx-auto">
+  <div class="container mt-5 mx-auto w-100">
     <div class="row mt-5">
       <div class="col-md-12">
         <div class="position-relative d-flex align-items-stretch">

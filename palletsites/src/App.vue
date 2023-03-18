@@ -22,7 +22,7 @@
         id="navbarNav"
       >
         <ul class="navbar-nav " style="margin-left: auto">
-          <!-- Adicionando estilo personalizado aqui -->
+         
           <li class="nav-item active">
             <router-link class="nav-link ml-auto" to="/" @click="closeNavbar"
               >Home</router-link
@@ -74,6 +74,7 @@ export default {
 
 
 <style lang="scss">
+
 
 .navbar-brand {
   padding-left: 1rem;

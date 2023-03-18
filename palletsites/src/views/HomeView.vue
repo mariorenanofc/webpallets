@@ -1,5 +1,5 @@
 <template>
-  <div class="home jumbotron text-center">
+  <div class="home jumbotron text-center w-100">
     <h1>Bem-vindo à Pallets Inc.</h1>
     <p class="lead">Nós fornecemos a melhor solução de paletes para o seu negócio.</p>
     <router-link to="/form" class="btn btn-primary btn-lg">Preencha nosso formulário</router-link>

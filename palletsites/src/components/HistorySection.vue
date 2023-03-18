@@ -1,5 +1,5 @@
 <template>
-  <div class="row align-items-md-center">
+  <div class="row align-items-center">
     <div class="col-md-6 container-text">
       <h2 class="mt-md-0">Nossa História</h2>
       <p class="mb-4 mb-md-0">A Pallets Inc. foi fundada em 1995 com o objetivo de fornecer soluções de logística e armazenamento para empresas de todo o mundo. Desde então, nos tornamos líderes de mercado no setor e continuamos a crescer e evoluir todos os dias.</p>
@@ -32,9 +32,18 @@ export default {
 </script>
 
 <style lang="scss">
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  align-content: center;
+  justify-items: center;
+}
+
 .container-text {
   margin-left: 2rem; 
   padding-left: 1rem;
+  text-align: center;
 }
 
 .history-image {
