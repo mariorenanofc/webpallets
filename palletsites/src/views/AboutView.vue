@@ -1,8 +1,8 @@
 <template>
   <div class="container mt-5">
-    <div class="row mt-5">
+    <div class="row mt-5 mx-0 no-gutters">
       <div class="col-md-12">
-        <div class="position-relative">
+        <div class="position-relative d-flex align-items-stretch">
           <img src="https://image.lexica.art/full_jpg/9557d02f-9daa-412d-a1b3-a3a222dccee8" class="image-container d-block w-100" alt="Sobre Nós">
           <div class="overlay"></div>
           <h1 class="position-absolute top-50 start-50 translate-middle text-white zoom">Descubra o poder dos Pallets Inc</h1>
@@ -40,11 +40,21 @@ export default {
 </script>
 
 <style lang="scss">
-  @import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap';
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .no-gutters {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  }
 
   .image-container {
-    height: 150vh;
-    max-width: 100%;
+    height: 100vh;
+    width: 100vw;
+
     position: relative;
     object-fit: cover;
     filter: brightness(80%);
@@ -65,7 +75,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 40px;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -113,5 +122,12 @@ export default {
       opacity: 1;
     }
   }
-</style>
+}
 
+@media (max-width: 768px) {
+  .position-relative {
+    padding-left: 0;
+  }
+}
+
+</style>
