@@ -1,11 +1,11 @@
 <template>
-  <div class="container mt-5">
-    <div class="row mt-5 mx-0 no-gutters">
+  <div class="container mt-5 mx-auto">
+    <div class="row mt-5">
       <div class="col-md-12">
         <div class="position-relative d-flex align-items-stretch">
           <img src="https://image.lexica.art/full_jpg/9557d02f-9daa-412d-a1b3-a3a222dccee8" class="image-container d-block w-100" alt="Sobre Nós">
           <div class="overlay"></div>
-          <h1 class="position-absolute top-50 start-50 translate-middle text-white zoom">Descubra o poder dos Pallets Inc</h1>
+          <h1 class="position-absolute top-50 start-50 translate-middle text-white zoom">Descubra mais sobre Pallets Inc</h1>
           <a href="#values-section" class="btn btn-lg btn-primary position-absolute bottom-0 start-50 translate-middle-x mt-5">Saiba Mais</a>
         </div>
       </div>
@@ -43,13 +43,10 @@ export default {
 @import 'bootstrap/scss/bootstrap';
 
 .container {
-  margin: 0 !important;
-  padding: 0 !important;
-
-  .no-gutters {
-  margin-right: 0 !important;
-  margin-left: 0 !important;
-  }
+  
+  display: contents;
+  
+  
 
   .image-container {
     height: 100vh;
